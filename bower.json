@@ -1,0 +1,13 @@
+{
+  "name": "qingxianke",
+  "version": "0.0.0",
+  "authors": [
+    "布谷 <ginko@foxmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "requirejs": "~2.1.14",
+    "jquery": "~1.11.1",
+    "underscore": "~1.6.0"
+  }
+}
