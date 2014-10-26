@@ -1,0 +1,39 @@
+>>>>>>>>>>> 全局
+1. tab键缩进4格
+
+
+>>>>>>>>>>>> HTML部分
+1. html标签中 id和class写在元素属性之前，例
+<a class=""
+
+>>>>>>>>>>>> CSS部分
+1. css属性的书写顺序
+    //显示属性
+    display
+    list-style
+    position
+    float
+    clear
+
+    //自身属性
+    width
+    height
+    margin
+    padding
+    border
+    background
+
+    //文本属性
+    color
+    font
+    text-decoration
+    text-align
+    vertical-align
+    white-space
+    other text
+    content
+
+
+>>>>>>>>>>>> JS部分
+1. 数组必须以负数形式命名，例如
+{name:'tom', habits:['book', 'movie', 'football']}
