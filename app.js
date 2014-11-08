@@ -10,11 +10,9 @@ var routes = require('./controllers/routes');
 
 var app = express();
 
-// 设置模板引擎
-var template = require('art-template');
-app.engine('html', template.__express);
-app.set('view engine', 'html');
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.use(favicon());
 app.use(logger('dev'));
