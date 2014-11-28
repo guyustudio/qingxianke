@@ -1,0 +1,83 @@
+/* 热门分类 */
+.m-popular-cat{
+    margin:20px auto;
+    width:360px;
+}
+.m-popular-cat li{
+    float:left;
+}
+.m-popular-cat li a{
+    display:block;
+    width:60px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    font-size: 15px;
+    color: #795548;
+}
+/* 商品卡片列表 */
+.m-goods-list{
+    position:relative;
+    left:25px;
+    width:1160px;
+    margin:0 auto;
+}
+.m-goods-list .card{
+    float:left;
+    position:relative;
+    margin-right:50px;
+    margin-bottom:30px;
+    width:240px;
+    height:285px;
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+    -moz-box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+    -ms-box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+    box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+}
+.m-goods-list .card .picture{
+    display:block;
+    position:relative;
+    overflow:hidden;
+    height:180px;
+}
+.m-goods-list .card .picture img{
+    width:240px;
+}
+.m-goods-list .card .price{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 12px;
+    font-size: 13px;
+    color: #fff;
+    background: rgba(0,77,64,0.3);
+}
+.m-goods-list .card .desc{
+    display:block;
+    padding:10px;
+    color:#795548;
+    font-weight:bold;
+    font-size:13px;
+}
+.m-goods-list .card .desc p{
+    line-height:16px;
+    max-height:48px;
+    overflow:hidden;
+}
+.m-goods-list .card .owner{
+    position:absolute;
+    left:10px;
+    bottom:10px;
+}
+.m-goods-list .card .owner img{
+    margin-right:5px;
+    width:24px;
+    height:24px;
+    border-radius: 12px;
+}
+.m-goods-list .card .owner .nick{
+    color:#795548;
+    font-size:12px;
+}

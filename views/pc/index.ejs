@@ -2,11 +2,36 @@
 <html>
 <head>
     <%include ./head.ejs%>
+    <link rel='stylesheet' href='/styles/index.css' />
 </head>
 <body>
     <header>
         <%include ./header.ejs%>
     </header>
-    <div class="m-cate-bar"></div>
+    <!-- 热门分类 -->
+    <ul class="m-popular-cat clearfix">
+        <li><a href="">图书</a></li>
+        <li><a href="">乐器</a></li>
+        <li><a href="">手机</a></li>
+        <li><a href="">平板</a></li>
+        <li><a href="">笔记本</a></li>
+        <li><a href="">自行车</a></li>
+    </ul>
+    <!-- 商品列表 -->
+    <ul class="m-goods-list clearfix">
+        <% goods.forEach(function(item, index) { %>
+        <li class="card">
+            <a class="picture">
+                <img src="<%=item.picture%>" alt=""/>
+                <span class="price">￥<%=item.price%></span>
+            </a>
+            <a class="desc"><p><%=item.desc%></p></a>
+            <a class="owner" href="">
+                <img src="<%=item.owner.avatar%>" alt=""/>
+                <span class="nick"><%=item.owner.nick%></span>
+            </a>
+        </li>
+        <% }); %>
+    </ul>
 </body>
 </html>
