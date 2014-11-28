@@ -2,7 +2,7 @@
  * 显示主页
  */
 module.exports.showHomePage = function(req, res){
-    var user = {nick:'Jim', avatar:'/images/avatar.jpg'};
+    var user = {nick:'布谷', avatar:'/images/avatar.jpg'};
     var goods = [
         {
             desc:'保暖纤维动物靠垫 / 熊猫',
@@ -110,5 +110,5 @@ module.exports.showHomePage = function(req, res){
             }
         }
     ];
-    res.render('pc/index', {user:user, goods: goods});
+    res.render('pc/home', {user:user, goods: goods});
 };

@@ -1,7 +1,7 @@
-var index = require('./pc/index');
+var home = require('./pc/home');
 var auth = require('./pc/auth');
 
-var indexM = require('./mobile/index');
+var homeM = require('./mobile/home');
 
 module.exports = function(app) {
     /**
@@ -9,9 +9,9 @@ module.exports = function(app) {
      */
     app.get('/', function (req, res) {
         if(req.mobile){
-            indexM.showHomePage(req, res);
+            homeM.showHomePage(req, res);
         } else{
-            index.showHomePage(req, res);
+            home.showHomePage(req, res);
         }
     });
 
