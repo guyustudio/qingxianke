@@ -4,6 +4,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session')
 
 global.db = require('./db/db');
 var routes = require('./controllers/routes');
@@ -19,6 +20,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
+app.use(session({secret:'guyu',resave:false, saveUninitialized:true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // 为req增加mobile标识，以判断请求是否来自移动端
