@@ -24,6 +24,17 @@ a {
     height: 0;
     clear: both;
 }
+/* 工具样式 */
+.f-db{ display: block;}
+.f-pr{ position:relative;}
+.f-mt-60{ margin-top: 60px;}
+.f-mb-20{ margin-bottom: 20px;}
+
+/* 布局样式 */
+.g-center{
+    width:1120px;
+    margin:100px auto 0;
+}
 
 /* 头部 */
 header{

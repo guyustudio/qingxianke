@@ -1,0 +1,45 @@
+/* 登陆页面 */
+.m-login{
+    float:right;
+    margin-right:120px;
+    padding:20px;
+    border: 1px solid #d3cdca;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.m-login .title{
+    margin-bottom: 20px;
+    border-left: 2px solid #4DB6AC;
+    padding-left: 6px;
+}
+.m-login .local input{
+    display:block;
+    width:280px;
+    height:42px;
+    padding:5px 10px;
+    border: none;
+    border-bottom: 1px solid #B2DFDB;
+    line-height:30px;
+    outline: none
+}
+.m-login .local .login{
+    position:absolute;
+    bottom:5px;
+    right:0;
+    width:35px;
+    height:35px;
+    background-image: url('/images/icon-login.png');
+    background-size: contain;
+}
+.m-login .local .forget{
+    display:block;
+    text-align: right;
+    margin-top:10px;
+    font-size:11px;
+    color: #666;
+}
+.m-login .other .or{
+    margin-bottom: 20px;
+    border-left: 2px solid #A1887F;
+    padding-left: 6px;
+}
