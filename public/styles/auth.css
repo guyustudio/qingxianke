@@ -1,7 +1,22 @@
 /* 登陆页面 */
+.c-auth-html{
+    background-color: #FAFAFA;
+}
+.g-auth-wrapper{
+    width:1120px;
+    margin:0 auto;
+    padding:100px 120px 60px;
+}
+.m-auth-desc{
+    float:left;
+}
+.m-auth-desc img{
+    position:relative;
+    top: -50px;
+    width:420px;
+}
 .m-login{
     float:right;
-    margin-right:120px;
     padding:20px;
     border: 1px solid #d3cdca;
     border-radius: 5px;

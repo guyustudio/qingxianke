@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="c-auth-html">
 <head>
     <meta charset="UTF-8">
     <%include ./head.ejs%>
@@ -7,7 +7,17 @@
     <title>登陆 | 清闲客</title>
 </head>
 <body>
-    <div class="g-center clearfix">
+    <header>
+        <div class="inner clearfix">
+            <div class="logo pull-left">
+                <a href="#">BIUBIUBIU</a>
+            </div>
+        </div>
+    </header>
+    <div class="g-auth-wrapper clearfix">
+        <div class="m-auth-desc">
+            <img src="/images/login_sample.png" alt="清除你的闲置物品"/>
+        </div>
         <section class="m-login">
             <p class="title">登陆清闲客</p>
             <!-- 本地登陆 -->
@@ -28,7 +38,6 @@
             </div>
         </section>
     </div>
-
     <script data-main="/scripts/page/login" src="/bower_components/requirejs/require.js"></script>
 </body>
 </html>
